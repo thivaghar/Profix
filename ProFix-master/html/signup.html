@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> RepairWise | SIGN UP </title>   
+    <link rel="icon" href="../images/logo/logo-icon.png"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/signup.css">
+</head>
+<body>
+  <script src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src = "https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.js"></script>
+
+  <script src="index.js"></script>
+    <header>
+        <div class="links">
+            <div class="logo">
+                <img src="../images/logo/logo_transparent.png" alt="">
+            </div>
+            <nav>
+                <a href="home.html"> HOME </a>
+                <a href="home.html #service"> SERVICES </a>
+                <a href="home.html #aboutus"> ABOUT</a>
+                <a href="home.html #contactus"> CONTACT US</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="login-box">
+        <div class="left-box">
+            <h1> Sign Up</h1>
+                <input type="text" name="username" id="username" placeholder="Username"/>
+                <input type="text" name="email" id="email" placeholder="Email"/>
+                <input type="password" name="password" id="password" placeholder="Password"/>
+                <input type="password" name="password2" id="password2" placeholder="Retype password"/>
+                <input type="submit" name="signup-button" id="submit" value="Sign Up" onclick="register()"/>
+       
+        </div>
+        <div class="right-box">
+            <span class="signinwith">Sign in with Social Network</span>
+            <button class="social facebook">Log in with Facebook</button>    
+            <button class="social twitter">Log in with Twitter</button> 
+            <button class="social google">Log in with Google+</button> 
+        </div>
+        <div class="or">OR</div>
+    </div>
+</body>    
+</html>
